@@ -44,7 +44,7 @@ for(let i=0; i < 9; i++){
                 children[i].innerHTML = currentPlayer.marker;
                 // case1 1,2,3 4,5, 7,9
                  if((case1.innerHTML === case2.innerHTML && case1.innerHTML === case3.innerHTML) || (case1.innerHTML === case4.innerHTML && case1.innerHTML === case7.innerHTML) || (case1.innerHTML === case5.innerHTML && case1.innerHTML === case9.innerHTML)){
-                     output.textContent = currentPlayer.name + " is the winner";
+                     output.textContent = currentPlayer.name + " is the winner 🏆🎉";
                      gameFinished = true;
                  }
             }
@@ -53,7 +53,7 @@ for(let i=0; i < 9; i++){
              children[i].innerHTML = currentPlayer.marker;
              // case2 
              if((case2.innerHTML === case1.innerHTML && case2.innerHTML === case3.innerHTML) || (case2.innerHTML === case5.innerHTML && case2.innerHTML === case8.innerHTML)){
-                 output.textContent = currentPlayer.name + " is the winner";
+                 output.textContent = currentPlayer.name + " is the winner 🏆🎉";
 
                  gameFinished = true;
              }
@@ -63,7 +63,7 @@ for(let i=0; i < 9; i++){
              children[i].innerHTML = currentPlayer.marker;
              // case3
              if((case3.innerHTML === case2.innerHTML && case3.innerHTML === case1.innerHTML) || (case3.innerHTML === case6.innerHTML && case3.innerHTML === case9.innerHTML) || (case3.innerHTML === case5.innerHTML && case3.innerHTML === case7.innerHTML)){
-                 output.textContent = currentPlayer.name + " is the winner";
+                 output.textContent = currentPlayer.name + " is the winner 🏆🎉";
                  gameFinished = true;
              }
          }
@@ -73,7 +73,7 @@ for(let i=0; i < 9; i++){
  
              // case4
              if((case4.innerHTML === case1.innerHTML && case4.innerHTML === case7.innerHTML) || (case4.innerHTML === case5.innerHTML && case4.innerHTML === case6.innerHTML)){
-                 output.textContent = currentPlayer.name + " is the winner";
+                 output.textContent = currentPlayer.name + " is the winner 🏆🎉";
                  gameFinished = true;
              }
          }
@@ -82,7 +82,7 @@ for(let i=0; i < 9; i++){
              children[i].innerHTML = currentPlayer.marker;
              // case5
              if((case5.innerHTML === case1.innerHTML && case5.innerHTML === case9.innerHTML) || (case5.innerHTML === case2.innerHTML && case5.innerHTML === case8.innerHTML) || (case5.innerHTML === case4.innerHTML && case5.innerHTML === case6.innerHTML)){
-                 output.textContent = currentPlayer.name + " is the winner";
+                 output.textContent = currentPlayer.name + " is the winner 🏆🎉";
                  gameFinished = true;
              }
          }
@@ -92,7 +92,7 @@ for(let i=0; i < 9; i++){
  
              // case6
              if((case6.innerHTML === case3.innerHTML && case6.innerHTML === case9.innerHTML) || (case6.innerHTML === case4.innerHTML && case6.innerHTML === case5.innerHTML)){
-                 output.textContent = currentPlayer.name + " is the winner";
+                 output.textContent = currentPlayer.name + " is the winner 🏆🎉";
                  gameFinished = true;
              }
          }
@@ -102,7 +102,7 @@ for(let i=0; i < 9; i++){
  
              // case7
              if((case7.innerHTML === case1.innerHTML && case7.innerHTML === case4.innerHTML) || (case7.innerHTML === case5.innerHTML && case7.innerHTML === case3.innerHTML) || (case7.innerHTML === case8.innerHTML && case7.innerHTML === case9.innerHTML)){
-                 output.textContent = currentPlayer.name + " is the winner";
+                 output.textContent = currentPlayer.name + " is the winner 🏆🎉";
                  gameFinished = true;
  
              }
@@ -113,7 +113,7 @@ for(let i=0; i < 9; i++){
  
              // case8
              if((case8.innerHTML === case2.innerHTML && case8.innerHTML === case5.innerHTML) || (case8.innerHTML === case7.innerHTML && case8.innerHTML === case9.innerHTML)){
-                 output.textContent = currentPlayer.name + " is the winner";
+                 output.textContent = currentPlayer.name + " is the winner 🏆🎉";
                  gameFinished = true;
              }
          }
@@ -123,7 +123,7 @@ for(let i=0; i < 9; i++){
  
              // case9
              if((case9.innerHTML === case3.innerHTML && case9.innerHTML === case6.innerHTML) || (case9.innerHTML === case7.innerHTML && case9.innerHTML === case8.innerHTML) || (case9.innerHTML === case1.innerHTML && case9.innerHTML === case5.innerHTML)){
-                 output.textContent = currentPlayer.name + " is the winner";
+                 output.textContent = currentPlayer.name + " is the winner 🏆🎉";
                  gameFinished = true;
              }
          }
@@ -137,7 +137,7 @@ for(let i=0; i < 9; i++){
             }
         }
         if(isDraww && !gameFinished){
-            output.textContent = "🤝 Match nul cette manche !";
+            output.textContent = "🤝 Match nul !";
             gameFinished = true;
         }
         myTurn = !myTurn;
