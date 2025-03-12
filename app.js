@@ -37,7 +37,6 @@ const case9 = children[8];
 
 
 for(let i=0; i < 9; i++){
-
     children[i].addEventListener("click", () => {
         if (gameFinished) return;
         if(children[i] === case1 ){
@@ -128,6 +127,18 @@ for(let i=0; i < 9; i++){
                  gameFinished = true;
              }
          }
+        }
+        //verifier si toutes les cases sont remplis sans gagnant
+        let isDraww = true;
+        for(let j = 0; j < 9; j++){
+            if(children[j].innerHTML === ''){
+                isDraww = false;
+                break;
+            }
+        }
+        if(isDraww && !gameFinished){
+            output.textContent = "🤝 Match nul cette manche !";
+            gameFinished = true;
         }
         myTurn = !myTurn;
         currentPlayer = myTurn ? player0ne : playerTwo;
