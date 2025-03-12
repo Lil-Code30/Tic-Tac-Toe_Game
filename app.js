@@ -154,6 +154,7 @@ resetButton.addEventListener('click', () =>{
     for(let k=0 ; k<9; k++){
         children[k].innerHTML = '';
         output.textContent = "";
+        gameFinished = false;
     }
 })
 
