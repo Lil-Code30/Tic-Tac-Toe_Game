@@ -15,6 +15,9 @@ const gameboard = document.getElementsByClassName("grid");
 
 const children = document.getElementsByClassName("cell");
 
+// reset button
+const resetButton = document.getElementById("resetButton");
+
 // for(let i; i < 9;i++){
 //     gameboard[i] = children[i]; 
 // }
@@ -146,5 +149,12 @@ for(let i=0; i < 9; i++){
     
 }
 
+// réinitialisation du jeu
+resetButton.addEventListener('click', () =>{
+    for(let k=0 ; k<9; k++){
+        children[k].innerHTML = '';
+        output.textContent = "";
+    }
+})
 
 
